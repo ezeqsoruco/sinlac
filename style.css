@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-secundario {
+    background: linear-gradient(to left, #FC9049, #FE0000 75%);
+    color: #ffffff;
+}
+
+.header__principal {
+    background-color: #ffffff;
+}
+
+.header__principal-item {
+    padding-left: 1rem;
+}
+
+.header__principal-item-button {
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #FC9049;
+    border: solid 2px #FC9049;
+    user-select: none;
+    padding: 0.5rem;
+}
+
+.header__principal-item-button:hover {
+    background-color: #FC9049;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.banner__button-slide {
+    border-radius: 100%;
+    max-width: 8px;
+    min-height: 8px;
+    background-color: rgba(252, 145, 73, 0.544) !important;
+}
+
+.carousel-indicators .active {
+    background-color: #FC9049 !important;
+}
+
+
+.bloques{
+    position: relative;
+}
+
+.bloques__img1{
+    height: 400px;
+    background: url('./assets/imgs/tacho-pintura.jpeg') center/cover no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.bloques__img1:hover, .bloques__img2:hover{
+    animation: pulse;
+    animation-duration: 2s;
+    z-index: 3;
+}
+
+.bloques__img2{
+    height: 400px;
+    background: url('./assets/imgs/pintando.jpeg') center/cover no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.bloques__img-text, .bloques__img-text2 {
+    width: 100%;
+    height: 100%;
+    background-color: #00000069;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.bloques__img-text-hr1 {
+    width: 4rem;
+    border: solid 2px;
+    opacity: 1;
+    margin: 0;
+    color: #FC9049;
+}
+
+.bloques__img-text:hover {
+    background-color: #fc9149c0;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.bloques__img-text2:hover {
+    background-color: #e23213c0;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+
+.bloques__img-text:hover .bloques__img-text-hr1,  .bloques__img-text2:hover .bloques__img-text-hr1{
+    color: #ffffff;
+}
+
+
+.bloques__img-text-descrip {
+    display: none;
+}
+
+.bloques__img1:hover .bloques__img-text-descrip, .bloques__img2:hover .bloques__img-text-descrip {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    transition: 0.5s;
+}
+
+.bloques__img-text-button  {
+    display: none;
+}
+
+.bloques__img1:hover .bloques__img-text-button, .bloques__img2:hover .bloques__img-text-button {
+    display: block;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.bloques__img1:hover .bloques__img-text-button:hover, .bloques__img2:hover .bloques__img-text-button:hover {
+    border: solid 2px #ffffff;
+    color: #000;
+    background-color: #ffffff;
+}
+
+.gradient-line {
+    height: 2px; 
+    background: linear-gradient(to right, #B909CE, #FF914C, #FE0000); /* Define your gradient */
+    border: none;
+    margin: auto;
+    width: 40%;
+}
+
+.productos, .novedades {
+    padding: 5rem;
+}
+
+.productos__title p {
+    font-size: 2rem;
+}
+
+.productos__destacados-bg1 {
+    background-color: #B909CE;
+}
+
+.productos__destacados-bg2 {
+    background-color: #FF914C;
+}
+
+.productos__destacados-fs1 {
+    font-size: 0.6rem;
+}
+
+.productos__destacados-fs2 {
+    font-size: 0.8rem;
+}
+
+.productos__destacados-color-text{
+    color: #FE0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.productos__btn-principal {
+    width: 20%;
+    background: linear-gradient(to left, #FE0000, #FC9049 75%);
+    color: #ffffff;
+}
+
+.productos__btn-principal:hover {
+    background: transparent;
+    color: #FC9049 !important;
+    border: solid 2px #FC9049 !important;
+    transition: color 0.5s;
+}
+.seccion-ive {
+    height: 400px;
+    background: url('./assets/imgs/slider-equipo.png') center/cover no-repeat;
+    background-size: cover;
+    padding: 7rem;
+}
+
+.seccion-ive__logo{
+    width: 8%;
+}
+
+.seccion-ive .gradient-line {
+    padding: 0.05rem;
+    margin: 0;
+    width: 10%;
+}
+
+.novedades__nov-card img {
+    width: 95%;
+}
+
+.novedades__nov-card-body {
+    width: 85%;
+    top:80%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.novedades__nov-card-body p a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FC9049 !important;
+}
+
+.profesionalismo {
+    background: url('./assets/imgs/banner-profesionlismo.png') center/cover no-repeat;
+    background-size: cover;
+    padding: 7rem;
+}
+
+.profesionalismo .productos__btn-principal {
+    width: 15%;
+}
+
+.footer-principal {
+    background-color: #565454;
+    padding: 10rem;
+    padding-top: 3rem;
+}
+
+.footer-principal__redes p {
+    gap: 0.5rem
+}
+
+.footer-principal__redes span {
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    border-radius: 12px;
+    border: 2px solid #FE0000;
+    align-items: center;
+}
+
+.footer-principal__redes span svg, .footer-principal__contacto span {
+    color: #FE0000;
+}
+
+.navbar-nav li {
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 2px; 
+  }
+  
+
+.navbar-nav li::after {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 0px; 
+    background-color: transparent; 
+    transition: background-color 0.3s;
+  }
+  
+
+.navbar-nav li:hover::after {
+    content: '•••'; 
+    color: #fc9149;
+    background-color: #fc9149; 
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+  }
+
+  .navbar-nav li a:hover, .nav-link li a:hover {
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.20);
+    color: #fc9149 !important;
+    font-weight: bold;
+  }
+
+div a {
+    text-decoration: none;
+}
+
+div a i{
+    color: #000;
+    font-weight: bold;
+}
+
+div a i:hover{
+    color: #B909CE;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+div a:hover {
+    color: #B909CE !important;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.profesionalismo p:hover {
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+}
+
+@media (max-width: 990px) {
+    .header__principal-item {
+        padding-left: 0rem;
+    }
+
+    .bloques__img1, .bloques__img2{
+        height: 200px;
+        position: relative;
+        background-size: cover;
+    }
+
+    .bloques__img-text, .bloques__img-text2 {
+        font-size: 1.5rem;
+    }
+
+    .bloques__img-text-hr {
+        width: 2rem;
+        border: solid 2px;
+    }
+
+    .productos__title p {
+        font-size: 1.5rem;
+    }
+
+    .productos__btn-principal{
+        width: 75%;
+    }
+
+    .seccion-ive__logo{
+        width: 50%;
+    }
+
+    .seccion-ive .gradient-line {
+        padding: 0.05rem;
+        margin: auto;
+        width: 20%;
+    }
+
+    .productos, .novedades {
+        padding: 2rem;
+    }
+
+    .novedades__nov-card-body{
+        position: static;
+    }
+
+    .profesionalismo .productos__btn-principal {
+        width: 70%;
+    }
+}
