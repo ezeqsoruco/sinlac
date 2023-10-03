@@ -263,9 +263,21 @@
         <section name="bloques-gris"></section>
         <section name="profesionalismo"
             class="profesionalismo col-12 d-flex flex-column justify-content-center align-items-center text-light">
-            <p class="fw-medium" style="color: #d7d9dc;">Inovación</p>
-            <p class="fw-bold" style="font-size: 2.5rem;">Profesionalismo</p>
-            <p class="fw-medium" style="color: #d7d9dc;">Cumplimiento</p>
+            <div class="wrapper">
+                <div class="outer">
+                    <div class="card" style="--delay:-1;">
+                        <a href="#">Inovación</a>
+                    </div>
+                    <div class="card" style="--delay:0;">
+                        <a href="#">Profesionalismo</a>
+                    </div>
+                    <div class="card" style="--delay:1;">
+                        <a href="#">Cumplimiento</a>
+                    </div>
+                    <div class="card" style="--delay:2;">
+                    </div>
+                </div>
+            </div>
             <button class="productos__btn-principal m-5 mb-0 p-2 rounded-pill border-0">
                 <span class="fw-medium">Ver catálogo</span>
             </button>
@@ -276,7 +288,7 @@
             <div
                 class="d-flex col-lg-12 flex-lg-row flex-column justify-content-between align-items-center gap-4 gap-lg-0">
                 <img class="col-lg-10" style="width: 200px;" src="./assets/imgs/logo-blanco.png" />
-                <p class="col-lg-2 footer-principal__redes fw-bold fs-5 text-light">Seguinos
+                <p class="col-lg-2 footer-principal__redes d-flex flex-row gap-3 fw-bold fs-5 text-light">Seguinos
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="21" viewBox="0 0 13 21" fill="none">
                             <path
