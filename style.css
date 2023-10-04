@@ -28,14 +28,28 @@ p{
     padding-left: 1rem;
 }
 
+#navbarSupportedContent{
+    padding: 0;
+}
+
+.nav-ber-icons {
+    width: 5rem;
+    padding-left: 1rem;
+}
+
+.nav-ber-icons a i, .nav-bar-responsive a i{
+    color: #FE0000;
+}
+
 .header__principal-item-button {
     border-radius: 5px;
     background-color: #ffffff;
-    color: #FC9049;
+    color: #FE0000;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    border: solid 2px #FC9049;
+    border: solid 2px #FE0000;
     user-select: none;
-    padding: 0.5rem;
+    padding: 0.7rem;
+    font-weight: bold;
 }
 
 .header__principal-item-button:hover {
@@ -132,6 +146,7 @@ p{
     background-color: transparent;
     font-size: 1rem;
     transition: 0.5s;
+    width: 8rem;
 }
 
 .bloques__img1:hover .bloques__img-text-button:hover, .bloques__img2:hover .bloques__img-text-button:hover {
@@ -183,6 +198,7 @@ p{
     border: solid 2px #FC9049 !important;
     background: linear-gradient(to left, #FE0000, #FC9049 75%);
     color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .productos__btn-principal:hover {
@@ -310,7 +326,7 @@ div a:hover {
 .wrapper {
     height: 7rem;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin: 3rem;
 }
 
 .wrapper .outer{
@@ -342,28 +358,23 @@ div a:hover {
   0%{
     opacity: 0;
     transform: translateY(100%) scale(0.5);
-    font-size: 1.5rem;
   }
   5%, 20%{
     opacity: 0.4;
     transform: translateY(100%) scale(0.7);
-    font-size: 1.5rem;
   }
   25%, 40%{
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0%) scale(1);
-    font-size: 3rem;
+    transform: translateY(0%) scale(1.5);
   }
   45%, 60%{
     opacity: 0.4;
     transform: translateY(-100%) scale(0.7);
-    font-size: 1.5rem;
   }
   65%, 100%{
     opacity: 0;
     transform: translateY(-100%) scale(0.5);
-    font-size: 1.5rem;
   }
 }
 
@@ -373,6 +384,7 @@ div a:hover {
   color: #fff;
   font-weight: bold;
   transition: all 0.3s ease;
+  font-size: 2rem;
 }
 
 .card p:hover{
@@ -393,6 +405,31 @@ div a:hover {
     .bloques__img-text, .bloques__img-text2 {
         font-size: 1.5rem;
     }
+
+    .bloques__img-text:hover, .bloques__img-text2:hover {
+        gap:0.5rem
+    }
+
+    .bloques__img1:hover .bloques__img-text-descrip, 
+    .bloques__img-text:hover .bloques__img-text-button,
+    .bloques__img2:hover .bloques__img-text-descrip, 
+    .bloques__img-text:hover .bloques__img-text-button
+    {
+        font-size: 0.8rem;
+    }
+
+    .bloques__img-text:hover .bloques__img-text-button,
+    .bloques__img-text2:hover .bloques__img-text-button
+    {
+        font-size: 0.8rem;
+    }
+
+    .bloques__img-text:hover .bloques__img-text-button,
+    .bloques__img-text2:hover .bloques__img-text-button
+    {
+        width: 20%;
+    }
+
 
     .bloques__img-text-hr {
         width: 2rem;
